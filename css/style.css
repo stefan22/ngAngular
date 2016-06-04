@@ -19,5 +19,9 @@ main.main {
 }
 
 .top-bar-right ul.menu {
-	margin-top: .7em;
+	margin-top: .75em;
+}
+
+.menu-text {
+	font-size: 18px;
 }
