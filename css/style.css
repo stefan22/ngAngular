@@ -5,3 +5,19 @@ hr.title {
 .ng-invalid-required.ng-touched {
 	border:1px solid red;
 }
+
+main.main {
+	padding-top: 3em;
+	width:80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.top-bar-right {
+	margin: 0 4em;
+}
+
+.top-bar-right ul.menu {
+	margin-top: .7em;
+}
