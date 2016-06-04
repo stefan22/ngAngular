@@ -7,6 +7,9 @@ myApp.config(function($routeProvider) {
 	$routeProvider.when('/', {
 		templateUrl:'views/landing.html',
 		controller:'LandingController'
+	}).when('/settings', {
+		templateUrl:'views/settings.html',
+		controller:'SettingsController'
 	}).when('/login', {
 		templateUrl:'views/login.html',
 		controller: 'LoginController'
