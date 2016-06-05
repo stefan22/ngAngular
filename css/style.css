@@ -6,12 +6,12 @@ hr.title {
 	border:1px solid red;
 }
 
-main.main {
+/*main.main {
 	padding-top: 3em;
 	width:80%;
 	margin: 0 auto;
 	text-align: center;
-}
+}*/
 
 
 .top-bar-right {
@@ -24,4 +24,12 @@ main.main {
 
 .menu-text {
 	font-size: 18px;
+}
+
+#settings {
+	margin-top: 3em;
+}
+
+#settings legend {
+	font-size:1.75em;
 }

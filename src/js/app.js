@@ -14,6 +14,9 @@ myApp.config(function($routeProvider) {
 		templateUrl:'views/login.html',
 		controller: 'LoginController'
 	}).when('/registration', {
+
+
+		
 		templateUrl:'views/registration.html',
 		controller:'RegistrationController'
 	}).otherwise({
