@@ -1,11 +1,15 @@
-myApp.controller('MailController',['$scope', function($scope) {
-	$scope.email = [
-		{
-			'id': 1,
-			'from': 'joe@gmail.com',
-			'to': 'jen@gmail.com',
-			'subject': 'Great Job',
-			'body': 'Congrats on the release of the book!'
-		}
-	];
+myApp.controller('MailController',['$scope', '$http', function($scope, $http) {
+	$http({
+	  method: 'GET',
+	  url: '/js/data.json'
+	}).then(function successCallback(data) {
+	    $scope.all = data;	
+	  }, function errorCallback(response) {
+	     console.log('shit happened');
+	});
 }]);
+
+
+
+
+/
