@@ -34,3 +34,12 @@ form {
 #settings legend {
 	font-size:1.75em;
 }
+
+#sidebar {
+	clear: left;
+	float: left;
+	min-height: 228px;
+	position: relative;
+	z-index: 1;
+}
+

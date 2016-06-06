@@ -13,10 +13,12 @@ myApp.config(function($routeProvider) {
 	}).when('/login', {
 		templateUrl:'views/login.html',
 		controller: 'LoginController'
-	}).when('/registration', {
+	}).when('/email', {
+		templateUrl:'views/email.html',
+		controller:'MailController'
+	})
 
-
-		
+	.when('/registration', {		
 		templateUrl:'views/registration.html',
 		controller:'RegistrationController'
 	}).otherwise({

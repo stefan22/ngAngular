@@ -1,7 +1,7 @@
 <section id="settings">
 
 	<div class="row">
-		<form name="form">
+		<form name="form" ng-submit="updateSettings()">
 			<fieldset>
 				<legend>Update settings</legend>
 				<div class="row">
@@ -41,13 +41,16 @@
 				</div>
 
 				<div class="row">
-					<div class="push-9 small-3 columns">						
-						<button type="submit" class="button">Update</button>				
+					<div class="small-8 columns">						
+						<button type="submit" class="button" ng-disabled="form.$invalid && form.$dirty">Update</button>
+						<span ng-show="form.$invalid && form.$dirty">Please fill all required fields prior to submitting form</span>				
 					</div>
 				</div>
 
 			</fieldset>
-			<u>test:</u> {{settings}}
+
+
+			
 		</form>
 	</div>
 
