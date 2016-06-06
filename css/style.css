@@ -13,6 +13,10 @@ hr.title {
 	text-align: center;
 }*/
 
+.top-bar, .top-bar ul {
+	background-color: #1F1D1D;
+}
+
 
 .top-bar-right {
 	margin: 0 4em;
