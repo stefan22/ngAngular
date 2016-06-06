@@ -8,7 +8,12 @@
 					<div class="small-8 columns">
 						<label>Name</label>
 						<input type="text" name="name" placeholder="enter name"
-								ng-model="settings.name" ng-minlength="3" ng-maxlength="20" />				
+								ng-model="settings.name" ng-minlength="3" ng-maxlength="20" ng-pattern="/^[a-zA-Z]+$/" required />
+								<div ng-show="form.name.$invalid && form.name.$dirty">
+									<p ng-show="form.name.$error.required">Your name is a required field</p>
+									<p ng-show="form.name.$error.minlength">Your name must be greater than 3 characters</p>
+									<p ng-show="form.name.$error.maxlength">Your name must be less than 20 characters</p>
+								</div>				
 					</div>
 				</div>
 
@@ -16,7 +21,8 @@
 					<div class="small-8 columns">
 						<label>Email</label>
 						<input type="email" name="email" placeholder="enter email"
-								ng-model="settings.email" />				
+								ng-model="settings.email" required />
+								<div ng-show="form.email.$invalid && form.email.$touched">Required field</div>				
 					</div>
 				</div>
 

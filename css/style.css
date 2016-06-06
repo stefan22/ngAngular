@@ -2,32 +2,29 @@ hr.title {
 	margin-top: .25em;
 }
 
-.ng-invalid-required.ng-touched {
-	border:1px solid red;
-}
-
-/*main.main {
-	padding-top: 3em;
-	width:80%;
-	margin: 0 auto;
-	text-align: center;
-}*/
 
 .top-bar, .top-bar ul {
 	background-color: #1F1D1D;
 }
 
-
-.top-bar-right {
-	margin: 0 4em;
+.ng-pristine {
+	border:1px solid green;
 }
 
-.top-bar-right ul.menu {
-	margin-top: .75em;
+.ng-dirty {
+	border:1px solid yellow;
 }
 
-.menu-text {
-	font-size: 18px;
+.ng-invalid.ng-dirty {
+	border:1px solid red;
+}
+
+.ng-valid.ng-dirty {
+	border:1px solid green;
+}
+
+form {
+	padding:2em;
 }
 
 #settings {
