@@ -7,6 +7,10 @@ hr.title {
 	background-color: #1F1D1D;
 }
 
+.top-bar-right {
+	padding-top: .7em;
+}
+
 .ng-pristine {
 	border:1px solid green;
 }
@@ -74,3 +78,13 @@ ul#emailListing {
 	font-size: .8em;
 }
 
+div.container {
+	overflow: auto;
+    border-bottom: 1px dotted #DFCDCD;
+    padding-top: 8px;
+    height: 90px;
+}
+
+.container .name {
+	color:#FF04A6;
+}
