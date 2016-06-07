@@ -16,9 +16,7 @@ myApp.config(function($routeProvider) {
 	}).when('/email', {
 		templateUrl:'views/email.html',
 		controller:'MailController'
-	})
-
-	.when('/registration', {		
+	}).when('/registration', {		
 		templateUrl:'views/registration.html',
 		controller:'RegistrationController'
 	}).otherwise({

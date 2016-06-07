@@ -43,9 +43,13 @@ form {
 	z-index: 1;
 }
 
+ul#emailListing {
+	list-style: none;
+}
+
 #emailListing {
 	margin-top: 20px;
-	overflow-x: scroll;
+	/* overflow-x: scroll; */
 	overflow-y: hidden;
 }
 
@@ -69,3 +73,4 @@ form {
 .emailListing .subject {
 	font-size: .8em;
 }
+
